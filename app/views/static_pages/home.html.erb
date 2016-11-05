@@ -1,6 +1,10 @@
-<h1>Testing home page</h1>
-<hr>
-<p>This is home page</p>
-<a href="/static_pages/help"><p>Help page</p></a>
-<a href="/static_pages/about"><p>About us page</p></a>
-<a href="#"><p>Ruby on Rails</p></a>
+<div class="center jumbotron">
+  <h1>Welcome to the Testing app</h1>
+  <h2>This is the home page testing application</h2>
+  <%= link_to "Sign up now", signup_path, class: "btn btn-large btn-primary"%>
+</div>
+<div class="brand">
+  <%= link_to image_tag("rails_logo.png", alt: "RubyOnRails"), 'http://rubyonrails.org'%>
+  <%= link_to image_tag("bootstrap_logo.png", alt: "Bootstrap"), 'http://getbootstrap.com/'%>
+  <%= link_to image_tag("sass_logo.png", alt: "SASS"), 'http://sass-lang.com/'%>
+</div>
