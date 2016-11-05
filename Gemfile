@@ -48,3 +48,5 @@ gem "rspec-rails", :group=>[:development, :test]
 gem 'capybara'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sass-rails', '>= 3.2'
+gem 'bcrypt', '~> 3.1.11'
+gem 'devise'
