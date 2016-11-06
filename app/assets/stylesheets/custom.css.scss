@@ -169,7 +169,7 @@ aside {
 
 input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
-  width: 700px !important;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 15px;
   @include box_sizing;
@@ -179,12 +179,17 @@ input {
   height: auto !important;
 }
 
-.new_user p {
-  width: 700px;
-  margin: 0 auto;
-}
-
 .new_user .custom-btn {
   width: 150px !important;
-  margin-left: 162px;
+}
+
+#error_explanation {
+  color: #f00;
+  ul {
+    list-style: none;
+    margin: 0 0 18px 0;
+  }
+}
+.alert {
+  margin-bottom: 0px;
 }
