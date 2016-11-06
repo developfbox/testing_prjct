@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  get 'users/new'
-
   root 'static_pages#home'
+
+  resources :users
 
   get 'help' => 'static_pages#help'
 

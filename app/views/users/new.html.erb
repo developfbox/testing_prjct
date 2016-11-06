@@ -1,2 +1,26 @@
 <% provide(:title, 'Sign Up')%>
 <h1>Testing sign up page</h1>
+
+<div class="row">
+  <div class="span6">
+    <%= form_for(@user) do |f|%>
+      <div class="form-group">
+        <p><%= f.label :first_name%></p>
+        <%= f.text_field :first_name, :class => 'form-control', :placeholder => 'Enter your first name'%>
+
+        <p><%= f.label :last_name%></p>
+        <%= f.text_field :last_name, :class => 'form-control', :placeholder => 'Enter your last name'%>
+
+        <p><%= f.label :email%></p>
+        <%= f.text_field :email, :class => 'form-control', :placeholder => 'Enter your email address'%>
+
+        <p><%= f.label :password%></p>
+        <%= f.password_field :password, :class => 'form-control', :placeholder => 'Create a password'%>
+
+        <p><%= f.label :password_confirmation, "Confirmation"%></p>
+        <%= f.password_field :password_confirmation, :class => 'form-control', :placeholder => 'Confirm your password'%>
+      </div>
+      <%= f.submit "Create my account", class: "btn btn-large btn-primary custom-btn"%>
+    <% end%>
+  </div>
+</div>
